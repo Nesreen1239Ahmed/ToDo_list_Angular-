@@ -1,0 +1,202 @@
+ .todo-container {
+  
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.backImage{
+    background-image: url('https://t3.ftcdn.net/jpg/05/13/59/72/360_F_513597277_YYqrogAmgRR9ohwTUnOM784zS9eYUcSk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+    h1 {
+      text-align: center;
+      color: #7E4330;
+      margin-bottom: 30px;
+    }
+
+    .add-task-form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .task-input {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .task-input:focus {
+      outline: none;
+      border-color: #7E4330;
+    }
+
+    .add-btn {
+      padding: 12px 20px;
+      background-color: #7E4330;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .add-btn:hover:not(:disabled) {
+      background-color: #7E4330;
+    }
+
+    .add-btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .todo-list {
+      margin-bottom: 20px;
+    }
+
+    .todo-item {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .todo-item:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .todo-item.completed {
+      background-color: #f9f9f9;
+      opacity: 0.7;
+    }
+
+    .todo-display {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .task-name {
+      flex: 1;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .completed-text {
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    .task-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .edit-btn, .delete-btn, .save-btn, .cancel-btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+
+    .edit-btn {
+      background-color: #7E4330;
+      color: white;
+    }
+
+    .edit-btn:hover:not(:disabled) {
+      background-color: #7E4330;
+    }
+
+    .edit-btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .delete-btn {
+      background-color: #FF7D29;
+      color: white;
+    }
+
+    .delete-btn:hover {
+      background-color: #FF7D29;
+    }
+
+    .todo-edit {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .edit-input {
+      flex: 1;
+      padding: 8px;
+      border: 2px solid #7E4330;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .edit-input:focus {
+      outline: none;
+      border-color: #7E4330;
+    }
+
+    .edit-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .save-btn {
+      background-color: #7E4330;
+      color: white;
+    }
+
+    .save-btn:hover {
+      background-color: #7E4330;
+    }
+
+    .cancel-btn {
+      background-color: #757575;
+      color: white;
+    }
+
+    .cancel-btn:hover {
+      background-color: #616161;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: #666;
+      font-style: italic;
+      padding: 40px;
+      background-color: #f9f9f9;
+      border-radius: 6px;
+    }
+
+    .stats {
+      text-align: center;
+      color: #7E4330;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 15px;
+      background-color: #FFBF78;
+      border-radius: 6px;
+    }
